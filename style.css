@@ -10,15 +10,14 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  padding-right: 3rem;
-  padding-left: 3rem;
+  padding: 1rem 3rem 0rem;
+  margin: 0 auto;
   height: 100%;
 }
 .page-header {
   height: 2rem;
   background-color: var(--color-1);
   display: flex;
-  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 .page-header__word {
@@ -33,7 +32,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid var(--color-1);
+  border: 2px solid var(--color-1);
+  box-sizing: border-box;
   padding: 0.5rem;
   margin-bottom: 2rem;
 }
@@ -46,40 +46,37 @@ body {
   width: 16rem;
   background-color: var(--color-2);
   margin-right: 0.5rem;
-  padding: 0.5rem;
 }
 .filter-row__item {
   height: 2rem;
   width: 2rem;
   background-color: var(--color-2);
-  padding: 0.5rem;
 }
 .filter-row__item-loading {
   height: 2rem;
   width: 2rem;
   background-color: var(--color-2);
-  padding: 0.5rem;
 }
-.table-wrapper {
+.table {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 50rem;
   border: 2px solid var(--color-2);
   box-sizing: border-box;
 }
-.table-wrapper__table-header {
+.table__header {
   flex: 0 0 auto;
   background-color: var(--color-2);
   height: 3rem;
 }
-.table-wrapper__table-body {
+.table__body {
+  font-size: 2rem;
   background-color: var(--color-1);
   flex: 1 1 auto;
   overflow-y: scroll;
-  height: 100%;
 }
-.table-wrapper__table-footer {
+.table__footer {
   flex: 0 0 auto;
   background-color: var(--color-2);
   height: 3rem;
