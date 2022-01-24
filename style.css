@@ -1,0 +1,85 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --color-1: #a8a8ff;
+  --color-2: #8055ff;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem 0rem;
+  margin: 0 auto;
+  height: 100%;
+}
+.page-header {
+  height: 2rem;
+  background-color: var(--color-1);
+  display: flex;
+  margin-bottom: 2rem;
+}
+.page-header__word {
+  color: var(--color-2);
+  font-size: 1.7rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+.filter-row {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--color-1);
+  box-sizing: border-box;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.filter-row__item-group {
+  display: flex;
+  align-items: center;
+}
+.filter-row__item-search {
+  height: 2rem;
+  width: 16rem;
+  background-color: var(--color-2);
+  margin-right: 0.5rem;
+}
+.filter-row__item {
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--color-2);
+}
+.filter-row__item-loading {
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--color-2);
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50rem;
+  border: 2px solid var(--color-2);
+  box-sizing: border-box;
+}
+.table__header {
+  flex: 0 0 auto;
+  background-color: var(--color-2);
+  height: 3rem;
+}
+.table__body {
+  font-size: 2rem;
+  background-color: var(--color-1);
+  flex: 1 1 auto;
+  overflow-y: scroll;
+}
+.table__footer {
+  flex: 0 0 auto;
+  background-color: var(--color-2);
+  height: 3rem;
+  position: sticky;
+  bottom: 0px;
+}
