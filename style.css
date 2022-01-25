@@ -61,25 +61,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 50rem;
+  height: 100%;
   border: 2px solid var(--color-2);
   box-sizing: border-box;
 }
 .table__header {
-  flex: 0 0 auto;
+  flex: 0 0 3;
   background-color: var(--color-2);
-  height: 3rem;
+  height: 2.5rem;
 }
 .table__body {
   font-size: 2rem;
   background-color: var(--color-1);
   flex: 1 1 auto;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .table__footer {
-  flex: 0 0 auto;
+  flex: 0 0 3;
   background-color: var(--color-2);
-  height: 3rem;
-  position: sticky;
-  bottom: 0px;
+  height: 2.5rem;
 }
