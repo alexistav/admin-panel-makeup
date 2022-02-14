@@ -23,7 +23,6 @@
   border-radius: 0.25rem;
   width: 100%;
   height: 2rem;
-  
   padding-left: 0.5rem;
 }
 .input__input::placeholder {
@@ -31,14 +30,13 @@
 }
 .input__input_incorrect {
   border: 1px solid var(--red);
- 
 }
 .input__input_disabled {
   background-color: var(--blue);
-  
 }
 .input__field {
   position: relative;
+  display: inline-block;		
 }
 .input__locked-img {
   fill: var(--black);
@@ -53,5 +51,4 @@
   top: 0.6rem;
   right: 0.5rem;
   stroke: var(--blue);
-  
 }
