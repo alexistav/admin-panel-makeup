@@ -1,0 +1,44 @@
+:root {
+  --dark-blue: #459DF5;
+  --blue: #BAD8F5;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.searchbar__box {
+  position: relative;
+  width: 16rem;
+  height: 2rem;
+  left: 500px;
+  top: -235px;
+}
+.searchbar__entry {
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 1rem; 
+  border: 1px solid var(--dark-blue);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.25rem 0.25rem 2rem;
+}
+.searchbar__input::placeholder {
+  
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--blue);
+  
+  font-size: 0.75rem;
+}
+.search__img {
+  position: absolute;
+  stroke: var(--dark-blue);
+  left: 0.5rem;
+  top: 0.25rem;
+  width: 1rem;
+}
+.clear__img {
+  position: absolute;
+  stroke: var(--blue);
+  width: 1rem;
+  top: 0.3rem;
+  right: 0.75rem;
+}
