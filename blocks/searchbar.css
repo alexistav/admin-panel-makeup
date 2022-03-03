@@ -1,44 +1,62 @@
 :root {
-  --dark-blue: #459DF5;
-  --blue: #BAD8F5;
+  --background: #ebf0f5;
+  --border: #8055ff; 
+  --border-input: #459df5;
+  --border-incorrect: #f53152;
+  --background-lock: #bad8f5;
 }
-body {
+.searchbar {
+  display: flex;
+  background:var(--background);
+  width: 22rem;
+  height: 12rem;
+  margin-left: 5rem;
+}
+.searchbar-box {
   display: flex;
   flex-direction: column;
+  border: 1px dashed var(--border);
+  box-sizing: border-box;
+  border-radius: 0,3125rem;
+  padding: 3rem 3rem;
 }
-.searchbar__box {
+.searchbar-box__input-box {
+  display: flex;
   position: relative;
   width: 16rem;
-  height: 2rem;
-  left: 500px;
-  top: -235px;
+  align-items: center;
+  margin-bottom: 2rem;
 }
-.searchbar__entry {
-  box-sizing: border-box;
+.searchbar-box__search {
   width: 100%;
-  line-height: 1rem; 
-  border: 1px solid var(--dark-blue);
-  border-radius: 0.25rem;
-  padding: 0.25rem 0.25rem 0.25rem 2rem;
+  height: 2rem;
+  border: 1px solid var(--border-input);
+  box-sizing: border-box;
+  border-radius: 0,25rem;
+  padding: 0.5rem 2.25rem 0.5rem 2rem;
+  outline: none;
 }
-.searchbar__input::placeholder {
-  
-  font-family: 'Ubuntu', sans-serif;
-  color: var(--blue);
-  
-  font-size: 0.75rem;
+.searchbar-box__search::placeholder {
+  color: var(--background-lock);
 }
-.search__img {
+.searchbar-box__search:focus {
+  border: 3px solid var(--border-input);
+  box-shadow: 0px 0px 5px var(--border-input);
+  outline: none;
+}
+.search__icon {
   position: absolute;
-  stroke: var(--dark-blue);
   left: 0.5rem;
-  top: 0.25rem;
   width: 1rem;
+  height: 1rem;
 }
-.clear__img {
+.search__clear-icon {
   position: absolute;
-  stroke: var(--blue);
+  background: inherit;
+  right: 1rem;
+  height:1rem;
   width: 1rem;
-  top: 0.3rem;
-  right: 0.75rem;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
